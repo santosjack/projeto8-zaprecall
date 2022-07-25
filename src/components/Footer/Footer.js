@@ -12,7 +12,7 @@ export default function Footer (props) {
                 return(
                     <div className="result">
                         <div>
-                            <span>😥</span>
+                            <span className='emoji'>😥</span>
                             <span>Putz...</span>
                         </div>
                         <div>Ainda faltam alguns... Mas não desanime!</div>
@@ -22,7 +22,7 @@ export default function Footer (props) {
                 return(
                     <div className="result">
                         <div>
-                            <span>🥳</span>
+                            <span className='emoji'>🥳</span>
                             <span>Parabéns!</span>
                         </div>
                         <div>Você não esqueceu de nenhum flashcard!</div>
