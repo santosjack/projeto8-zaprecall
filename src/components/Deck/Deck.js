@@ -6,9 +6,16 @@ import './style.css';
 export default function Deck (props){
 
     const {result, setResult } = props.props;
+    const [sortedDeck, setSortedDeck ] = React.useState([]);
+   
+    let count = 0;
 
     useEffect(
-        () => setResult({...result, total: deck.length}), []
+        () => {
+            setResult({...result, total: deck.length});
+            setSortedDeck(shuffleArray(deck));
+            console.log(sortedDeck);
+    }, []
     );
 
     function showResults (r, type) {
@@ -16,15 +23,28 @@ export default function Deck (props){
         
     }
 
-    console.log(result)
+    function shuffleArray(arr) {
+
+        let newArr = arr;
+        // Loop em todos os elementos
+        for (let i = newArr.length - 1; i > 0; i--) {
+            // Escolhendo elemento aleatório
+            const j = Math.floor(Math.random() * (i + 1));
+        // Reposicionando elemento
+            [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+        }
+    // Retornando array com aleatoriedade
+        return newArr;
+    }
+
 
     return (
        <div className="deck">
             {
-                deck.map( (item) => (
+                sortedDeck.map( (item) => (
                     <Flashcard
                         key={item.id}
-                        id={item.id}
+                        id={++count}
                         question={item.question}
                         answer={item.answer}
                         showResults={showResults}

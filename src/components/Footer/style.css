@@ -2,7 +2,7 @@
     background-color: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     width: 100%;
-    min-height: 70px;
+    min-height: 80px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -20,6 +20,7 @@
     line-height: 22px;
 }
 
+
 .container-footer .result{
     min-height: 81px;
     max-height: 100px;
@@ -29,7 +30,7 @@
     justify-content: space-around;
 }
 
-.container-footer .result > div:first-of-type > span:last-of-type{
+.container-footer .result  div:first-of-type > span:last-of-type{
     font-weight: 600;
     margin-left: 12px;
 }

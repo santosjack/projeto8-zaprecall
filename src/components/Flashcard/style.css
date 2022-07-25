@@ -25,7 +25,8 @@ ion-icon{
 }
 
 .question{
-    height: 131px;
+    min-height: 131px;
+    max-height: fit-content;
     background: #FFFFD5;
     padding: 4%;
   
@@ -43,7 +44,8 @@ ion-icon{
 }
 
 .answer{
-    height: 131px;
+    min-height: 131px;
+    max-height: fit-content;
     background: #FFFFD5;
     padding: 4%;
 
