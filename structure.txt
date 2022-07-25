@@ -1,0 +1,8 @@
+App
+--WelcomeScreen
+--MainScreen
+----Deck
+------Flashcard
+--------Question
+--GoalScreen
+--DeckChoicesScreen

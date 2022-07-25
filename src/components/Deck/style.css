@@ -1,0 +1,10 @@
+.deck{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.deck .invisible{
+    visibility: hidden;
+    height: 100px;
+    width: 100%;
+}

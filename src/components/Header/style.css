@@ -1,0 +1,24 @@
+.container-header{
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 42px;
+}
+
+.container-header img{
+    width: 52px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.container-header h2{
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 45px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
