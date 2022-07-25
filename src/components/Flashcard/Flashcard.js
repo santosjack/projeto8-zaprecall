@@ -12,12 +12,15 @@ export default function Flashcard ({id, question, answer, showResults}) {
     const [ status, setStatus ] = React.useState(false);
 
     function finishCard (stt) {
+        let type = stt;
+        type = "num"+type.replace(type.charAt(0), type.charAt(0).toUpperCase());
+        console.log(type);
         setIsFineshed(true);
         setStatus(stt);
-        showResults(stt);
+        showResults(mountStatus(stt), type);
     }
 
-    function mountStatus(){
+    function mountStatus(status){
         if(status === "fail"){
             return <ion-icon name="close-circle" className="fail"></ion-icon>
         }
@@ -72,7 +75,7 @@ export default function Flashcard ({id, question, answer, showResults}) {
                 <div className={"closed finished " + (!!status ? status : "")}>
                     <span>Pergunta {id}</span>
                     <div>
-                        {mountStatus()}
+                        {mountStatus(status)}
                     </div>
                 </div>
             )

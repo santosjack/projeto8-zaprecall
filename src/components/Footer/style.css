@@ -2,7 +2,7 @@
     background-color: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     width: 100%;
-    height: 70px;
+    min-height: 70px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -18,4 +18,42 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+}
+
+.container-footer .result{
+    min-height: 81px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-footer .result > div:first-of-type > span:last-of-type{
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.container-footer .result > div:first-of-type{
+    margin-top: 10px;
+}
+
+.container-footer .result > div:last-of-type{
+    width: 222px;
+    height: 44px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.container-footer .progressIcons [name="close-circle"] {
+    color: #FF3030;
+}
+
+.container-footer .progressIcons > [name="help-circle" ]{
+    color: #FF922E;
+}
+
+.container-footer .progressIcons > [name="checkmark-circle"]{
+    color: #2FBE34;
 }

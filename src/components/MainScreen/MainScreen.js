@@ -10,10 +10,13 @@ export default function MainScreen () {
     const [result, setResult ] = React.useState({
         total: 0,
         numFinished: 0,
-        seqResults: []
+        seqResults: [],
+        numGood: 0,
+        numOk: 0,
+        numFail: 0
     }); 
 
-    
+
   
     return (
         <div className="container-main">

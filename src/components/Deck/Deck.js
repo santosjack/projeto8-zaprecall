@@ -11,15 +11,12 @@ export default function Deck (props){
         () => setResult({...result, total: deck.length}), []
     );
 
-    function showResults (r) {
-        setResult({...result, numFinished: result.numFinished+1, seqResults: [...result.seqResults, r]});
-        console.log(result)
+    function showResults (r, type) {
+        setResult({...result, numFinished: result.numFinished+1, seqResults: [...result.seqResults, r], [""+type]: result[""+type]+1});
+        
     }
 
-
-
-
-    
+    console.log(result)
 
     return (
        <div className="deck">
